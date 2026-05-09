@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background -->
+  <rect width="32" height="32" rx="6" fill="#1a1a1a"/>
+  <!-- Header row -->
+  <rect x="4" y="4" width="24" height="8" rx="2" fill="#3b82f6"/>
+  <!-- Body rows -->
+  <rect x="4" y="14" width="24" height="5" rx="1" fill="rgba(255,255,255,0.18)"/>
+  <rect x="4" y="21" width="24" height="5" rx="1" fill="rgba(255,255,255,0.18)"/>
+  <!-- Column divider -->
+  <rect x="15.5" y="4" width="1" height="22" fill="rgba(255,255,255,0.25)"/>
+</svg>
