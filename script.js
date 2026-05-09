@@ -43,6 +43,7 @@ function renderPreview() {
 
       const cell = document.createElement(isHeader ? 'th' : 'td');
       cell.contentEditable = 'true';
+      cell.style.width = (100 / cols) + '%';
       cell.textContent = tableData[i][j];
 
       // Sync edits back to state and regenerate output
