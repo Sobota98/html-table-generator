@@ -158,32 +158,45 @@ section {
   overflow-x: auto;
 }
 
-#tablePreview {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-#tablePreview td,
-#tablePreview th {
-  border: 1px solid #ccc;
-  padding: 0.45rem 0.65rem;
-  min-width: 80px;
-  font-size: 0.9rem;
-  white-space: nowrap;
+.table-wrapper table {
+  border: 1px solid rgba(153, 153, 153, 0.25);
+  border-radius: 4px;
+  border-collapse: separate;
+  border-spacing: 0;
   overflow: hidden;
+  width: 100%;
+  text-align: start;
 }
 
-#tablePreview th {
-  background: #eef2ff;
-  font-weight: 600;
+.table-wrapper th,
+.table-wrapper td {
+  padding: 10px;
+  min-width: 80px;
+  text-align: start;
+  font-size: 0.9rem;
 }
 
-#tablePreview td:focus,
-#tablePreview th:focus {
+.table-wrapper th {
+  background-color: rgba(220, 222, 227, 0.5);
+  font-weight: 700;
+}
+
+.table-wrapper tr + tr td,
+.table-wrapper tr + tr th {
+  border-top: 1px solid rgba(153, 153, 153, 0.25);
+}
+
+.table-wrapper td + td,
+.table-wrapper th + th,
+.table-wrapper td + th,
+.table-wrapper th + td {
+  border-left: 1px solid rgba(153, 153, 153, 0.25);
+}
+
+.table-wrapper td:focus,
+.table-wrapper th:focus {
   outline: 2px solid #3b82f6;
   outline-offset: -2px;
-  background: #f0f7ff;
-  white-space: normal;
 }
 
 /* ── Output ── */

@@ -1,7 +1,7 @@
 // ── State ──────────────────────────────────────────────────────────────────
-let rows = 3;
-let cols = 3;
-let headerType = 'first-row';
+let rows = 5;
+let cols = 2;
+let headerType = 'first-col';
 let tableData = [];
 
 // ── Data helpers ───────────────────────────────────────────────────────────
