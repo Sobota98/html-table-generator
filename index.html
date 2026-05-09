@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Table Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>HTML Table Generator</h1>
+
+    <!-- Controls -->
+    <section class="controls">
+      <div class="size-controls">
+        <div class="control-group">
+          <span class="control-label">Rows</span>
+          <div class="input-group">
+            <button id="removeRow" aria-label="Remove row">−</button>
+            <input type="number" id="rowCount" value="3" min="1" />
+            <button id="addRow" aria-label="Add row">+</button>
+          </div>
+        </div>
+        <div class="control-group">
+          <span class="control-label">Columns</span>
+          <div class="input-group">
+            <button id="removeCol" aria-label="Remove column">−</button>
+            <input type="number" id="colCount" value="3" min="1" />
+            <button id="addCol" aria-label="Add column">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-options">
+        <span class="control-label">Header</span>
+        <div class="radio-group">
+          <label><input type="radio" name="headerType" value="first-row" checked /> First row</label>
+          <label><input type="radio" name="headerType" value="first-col" /> First column</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live Table Preview -->
+    <section class="preview-section">
+      <h2>Preview <span class="hint">— click any cell to edit</span></h2>
+      <div class="table-wrapper">
+        <table id="tablePreview"></table>
+      </div>
+    </section>
+
+    <!-- HTML Output -->
+    <section class="output-section">
+      <div class="output-header">
+        <h2>HTML Output</h2>
+        <button id="copyBtn">Copy HTML</button>
+      </div>
+      <textarea id="htmlOutput" readonly spellcheck="false"></textarea>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
