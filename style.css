@@ -165,6 +165,7 @@ section {
   border-spacing: 0;
   overflow: hidden;
   width: 100%;
+  table-layout: fixed;
   text-align: start;
 }
 
